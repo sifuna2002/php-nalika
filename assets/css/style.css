@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'itromatic';
+    src: url('../fonts/ltromatic.ttf') format('truetype'); 
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    width: 100%;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.nav{
+    width: 100%;
+    z-index: 4;
+    min-height: 70px;
+    background-color: rgba(255, 235, 235, 0.6);
+    box-shadow: 2px 2px 2px black;
+}
+.nav>a{
+    text-decoration: none;
+    color: black;
+}
+.nav>a:hover{
+    color: grey;
+}
+.first{
+    margin-left: auto;
+}
+.top{
+    min-height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 20vh;
+}
+.ban-img{
+    height: 300px;
+}
+.footer{
+    background-color: grey;
+    color:white;
+    margin-top: 5vh;
+}
+.vote-btn{
+    padding: 5%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:700px){
+    .nav{
+        display: block;
+    }
+    .ban-img{
+        height: 200px;
+        padding-top: 10vh;
+    }
+}
